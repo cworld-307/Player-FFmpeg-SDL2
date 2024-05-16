@@ -28,7 +28,7 @@ private:
 	FFmpegPlayerCtx playerCtx;
 	std::string m_filePath;
 	SDL_AudioSpec audio_wanted_spec;
-	std::atomic<bool> m_stop = false;
+	std::atomic<bool> m_stop{false};
 
 	// 静态函数，用于包装成员函数调用
 	static void AudioDecodeThread_callback(void* userdata, unsigned char* stream, int len);

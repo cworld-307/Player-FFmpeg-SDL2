@@ -21,7 +21,7 @@ int main()
 
     // ³õÊ¼»¯FFmpeg²¥·ÅÆ÷
     FFmpegPlayer player;
-    player.setFilePath("d:/t.mp4");
+    player.setFilePath("/home/root123/test/t.mp4");
     if (player.initPlayer() != 0)
     {
         return -1;

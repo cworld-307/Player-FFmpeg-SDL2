@@ -1,0 +1,3 @@
+/home/root123/GitRepos/Player-FFmpeg-SDL2/build/CMakeFiles/Player.dir
+/home/root123/GitRepos/Player-FFmpeg-SDL2/build/CMakeFiles/edit_cache.dir
+/home/root123/GitRepos/Player-FFmpeg-SDL2/build/CMakeFiles/rebuild_cache.dir

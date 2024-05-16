@@ -11,6 +11,7 @@ extern "C" {
 }
 #include "PacketQueue.h"
 #include "RenderView.h"
+#include <atomic>
 
 #define MAX_AUDIO_FRAME_SIZE 192000 //channels(2) * data_size(2) * sample_rate(48000)
 #define VIDEO_PICTURE_QUEUE_SIZE 1
@@ -41,7 +42,7 @@ typedef struct FFmpegPlayerCtx
     int audio_pkt_size = 0;
     int audio_hw_buf_size = 0;
     SwrContext* audio_swr_ctx = nullptr;
-    std::atomic<int> pause = UNPAUSE;
+    std::atomic<int> pause{UNPAUSE};
 
     //video
     AVStream* video_st = nullptr;
